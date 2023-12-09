@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 3 - Links</title>
+        <style>
+            body{
+                font-size: 14px;
+            }
+            a{
+                text-decoration: none;
+            }
+            h1{
+                text-align: center;
+            }
+            p{
+                text-indent: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="topo"></a>
+        <h1>Trabalhando com Links</h1><hr>
+
+        <h2>Elementos e atributos para links</h2><hr>
+        <ul>
+            <li><a href="#absoluto">Links Absolutos</a></li>
+            <li><a href="#reletivo">Links Relativos</a></li>
+            <li><a href="#telmail">Link para Telefone / E-mail</a></li>
+            <li><a href="#vazio">Link Falso/Vazio</a></li>
+            <li><a href="#vertical">Links Verticais</a></li>
+            <li><a href="#download">Links para Download</a></li>
+            <li><a href="#fim">Ir para o fim da página</a></li>
+        </ul>
+
+        <h3><a id="absoluto">Links Absolutos</a></h3>
+        <p>É aquele tipo de link em que colocamos o endereço (URL) completo da página a ser acessada. Geralmente usado com links que vão para outros sites. </p>
+        <p>Evento em Lapa Tito: 
+            <a href="https://www.eventos.sp.senac.br" rel="external" target="_blank">Semana de TI</a>
+        </p><hr>
+
+        <h3><a id="relativo">Links Relativos</a></h3>
+        <p>É aquele em que o endereço do arquivo/página a ser acessado é relativo ao próprio site/domínio em que esta trabalhando.</p>
+        <p>
+            <a href="listas.html" rel="next">Acesse a lista</a>
+        </p><hr>
+
+        <h3><a id="telmail">Link para Telefone / E-mail</a></h3>
+        <p><strong>O e-mail</strong> abre geralmente um programa configurado na máquina do usuário.</p>
+        <p>Contato pelo e-mail: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+
+        <p><strong>O telefone</strong> carrega o aplicativo instalado na máquina do usuário.</p>
+        <p>Contato pelo tefone: <a href="tel:(55)11999995555">(11) 99999-5555</a></p><hr>
+
+        <h3><a id="vazio">Link Falso/Vazio</a></h3>
+        <p>Utilizado para simular o comportamento de um link.</p>
+        <p><a href="#">Terra do Nunca</a></p><hr>
+
+        <h3><a id="vertical">Links Verticais</a></h3>
+        <p>Usado para navegação por seções/áreas localizadas na mesma página.</p>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam provident maiores odit minima! Odio vel, sequi nisi modi voluptatibus, exercitationem accusamus excepturi distinctio, harum aspernatur aut tenetur sit ducimus minima!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae excepturi quas sed quos odio in doloremque laboriosam commodi eum consequatur culpa repellendus ex, deserunt quasi aspernatur voluptatibus nostrum inventore!</p>
+        <!-- âncora -->
+        <a id="fim"></a>
+                
+        <h3><a id="download">Links para Download</a></h3>
+        <p>Baixe a apostila web >> <a href="docs/apostila-web.pdf" download="">aqui</a> </p><hr>
+
+        <p><a href="#topo">Ir para o topo</a></p>
+    </body>
+</html>

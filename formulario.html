@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elementos do Formulário</title>
+    </head>
+    <body>
+        <header>
+            <h1>Trabalhando com tags para formulário</h1><hr>
+        </header>
+
+    <main>
+        <p>Elementos para formulário são voltados à intenção com o usuário. Entrada de dados, seleção de opções, processamento para manipulação de dados e etc.</p>
+
+        <p>Formulários no HTML são somente uma <strong>INTERFACE</strong>.</p>
+
+        <p>Para que o formulário funcione, é necessário combiná-lo com alguma <strong>linguagem de programação</strong>.</p>
+    </main><hr>
+    <section>
+        <h2>Exemplos</h2>
+        <!-- container para elementos de formulário -->
+        <form action="#" method="post">
+            <p>
+                <label for="nome"> Nome: </label> <!--rótulo para visualização do usuário -->
+                <input type="text" required id="nome" name="nome">
+            </p>
+
+            <p>
+                <label for="email"> Email: </label> <!--rótulo para visualização do usuário -->
+                <input type="email" required id="email" name="email">
+            </p>
+
+            <p>
+                <label for="fone"> Telefone: </label> <!--rótulo para visualização do usuário -->
+                <input type="tel" required id="fone" name="fone">
+            </p>
+
+            <p>
+                <label for="dataNasc"> Data de Nascimento: </label> <!--rótulo para visualização do usuário -->
+                <input type="date" required id="dataNasc" name="dataNasc">
+            </p>
+            <p>
+                <input type="checkbox" required id="nacional" name="nacional">
+                <label for="nacional"> Brasileiro</label>
+            </p>
+
+            
+            <p>
+                Sexo: 
+                <input type="radio" required id="feminino" name="sexo">
+                <label for="feminino"> Feminino </label>
+                <input type="radio" required id="masculino" name="sexo">
+                <label for="masculino"> Masculino </label>
+            </p>
+
+            <p>Interesses:</p>
+            <p>
+                <input type="checkbox" required id="html5" name="interesses">
+                <label for="html5"> HTML5</label>
+                <input type="checkbox" required id="css3" name="interesses">
+                <label for="css3"> CSS3</label>
+                <input type="checkbox" required id="js" name="interesses">
+                <label for="js"> JavaScript</label>
+            </p>
+
+            <p>                
+                <label for="cor"> Qual a sua cor preferida?</label>
+                <input type="color" required id="cor" name="cor">
+            </p>
+
+            <p>                
+                <label for="idade"> Qual a sua idade</label>
+                <input type="number" required id="idade" name="idade" >
+            </p>
+
+            <p>                
+                <label for="assunto"> Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="">Elogios</option>
+                    <option value="">Reclamações</option>
+                    <option value="">Sugestões</option>
+                </select>
+            </p>
+
+            <p>                
+                <label for="mensagem"> Deixe uma mensagem</label><br>
+                <textarea name="mensagem" id="mensagem" cols="80" rows="5"></textarea>
+            </p>
+
+            <button>Enviar</button>
+
+        </form>
+    </section>
+
+    </body>
+</html>
