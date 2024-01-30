@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+
+    <style>
+       a{
+        text-decoration: none;
+        background-color: darkslateblue;
+        color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-family: cursive;
+        margin: 40px;
+       }
+
+       /* Comportamento antes do link ser clicado */
+
+       a:link{
+        color: antiquewhite;
+       }
+
+       /* Comportamento do link após clicado */
+
+       a:visited{
+        color: whitesmoke;
+        background-color: darkslateblue;
+       }
+
+       /* Comportamento ao passar o mouse */
+
+       a:hover{
+        color: crimson;
+        background-color: black;
+       }
+
+       /* Comportamento de link ativo (pressionar) */
+
+       a:active{
+        color: black;
+        background-color: crimson;
+       }
+
+
+       img{
+        width: 20%;
+       }
+
+       img:hover{
+        width: 50%;
+        
+       }
+
+    </style>
+
+</head>
+<body>
+    <h1>Trabalhando com Pseudo-classes</h1>
+    <hr>
+
+    <p>São usadas para definir um elementocom um estado especial</p>
+
+    <p>Serve para:</p>
+
+    <ul>
+        <li>Estilizar um elemento quando um usuário passa o mouse sobre ele.</li>
+        <li>Estilizar o link visitado e o não visitado de forma diferente.</li>
+        <li>Estilizar um elemento quando ele recebe o foco.</li>
+    </ul>
+
+    <p id="botao"><a href="#">Pseudo-classe</a></p>
+
+    <img src="https://gkpb.com.br/wp-content/uploads/2022/09/Frieren-Beyond-Journeys-End-1.jpg" alt="scara" id="scara">
+
+    
+
+
+</body>
+</html>
