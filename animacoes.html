@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+
+    <style>
+        #cores{
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            animation-name: cores;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes cores{
+            from{
+                width: 20px;
+                height: 20px;
+                background-color: black;
+            }
+            to {
+                background-color: darkgray;
+                width: 100%;
+                height: 20px;
+            }
+        }
+
+        #coresMove{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            animation-name: movimento;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes movimento{
+            0%{
+                background-color: black;
+                left: 0;
+                top: 0;
+            }
+
+            20%{
+                background-color: darkgray;
+                left: 20%;
+                top: 0;
+                width: 100px;
+                height: 20px;
+
+            }
+            40%{
+                background-color: black;
+                left: 40%;
+                top: 0;
+                width: 20px;
+                height: 100px;
+            }
+            60%{
+                background-color: darkgray;
+                left: 60%;
+                top: 0;
+                width: 100px;
+                height: 20px;
+            }
+            80%{
+                background-color: black;
+                left: 80%;
+                top: 0;
+                width: 20px;
+                height: 100px;
+            }
+
+            100%{
+                background-color: darkgray;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        #rota{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            animation-name: rota;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rota{
+            0%{
+                transform: rotate(0deg); 
+                left: 0;
+            }
+
+            25%{
+                transform: rotate(90deg); 
+                left: 25px;
+            }
+
+            50%{
+                transform: rotate(180deg); 
+                left: 50px;
+            }
+
+            75%{
+                transform: rotate(270deg); 
+                left: 25px;
+            }
+
+            100%{
+                transform: rotate(360deg); 
+                left: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>O que são animações CSS?</h1>
+    
+    <p>Você pode alterar quantas propriedades CSS quiser, quantas vezes quiser.</p>
+    <p>Para usar animação CSS, você deve primeiro especificar alguns quadros-chaves para a animação.</p>
+    <p>Os quadros-chave contêm quais estilos o elemento terá em determinados momentos.</p>
+
+    <h2>A regra @keyframes</h2>
+    <p>Quando você especifica estilos CSS dentro da @keygrames regra, a animação mudará gradualmente do estilo atual para o novo estilo em determinados momentos.</p>
+    <p>Para que uma animação funcione, você deve vinculá-la a um elemento.</p>
+
+    <h2>Execute a animação na direção reversa ou em ciclos alternativos</h2>
+    <p>A animation-direction propriedade especifica se uma animação deve ser reproduzida para frente, para trás ou em ciclos alternados.</p>
+    <p>A propriedade Animation-Direction pode ter os seguintes valores:</p>
+
+    <ul>
+        <li>normal - A animação é reproduzida normalmente (avança). Este é o padrão</li>
+        <li>reverse - A animação é reproduziada na direção reversa (para trás)</li>
+        <li>alternate - A animação é reproduzida primeiro para frente e depois para trás</li>
+        <li>alternate-reverse - A animação é reproduzida primeiro para trás e depois para frente</li>
+    </ul>
+
+    <h4>Exemplos:</h4>
+
+    <div id="cores"></div>
+    <hr>
+    <div id="coresMove"></div>
+    <hr>
+    <div id="rota">WEB</div>
+    
+</body>
+</html>
