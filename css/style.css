@@ -1,0 +1,53 @@
+/*  */
+
+body{
+    background-color: lightblue;
+}
+
+.box_position{
+    background-color: rgb(182, 112, 248);
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    font-size: 18pt;
+}
+
+#static{
+    position: static;
+}
+
+#relative{
+    position: relative;
+    left: 35%;
+}
+
+#fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#relative2{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(65, 146, 238);
+}
+
+#absolute{
+    position: absolute;
+    bottom: 3px;
+    right: 15px;
+    background-color: darkblue;
+}
+
+#sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #1b9aea;
+    border: 2px solid black;
+}
