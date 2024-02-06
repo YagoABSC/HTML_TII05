@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+
+.los_quadrados{
+    margin: 0 auto;
+    border-radius: 400px;
+}
+
+#branco{
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    /* left: 30%; */
+    top: 110px;
+}
+#cinza{
+    background-color: grey;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 40%;
+    top: 270px;
+}
+
+#cimento{
+    background-color: darkgray;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 45%;
+    top: 340px;
+}
+
+#preto{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 48.3%;
+    top: 390px;
+}
