@@ -3,9 +3,10 @@
 body{
     background-color: rgb(233, 233, 233);
     font-family: sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    /* margin: auto ;
+    padding: 0;
+    width: 100%; */
+    
 }
 
 hr{
@@ -14,19 +15,24 @@ hr{
 }
 
 main{
-    width: 80%;
-    max-width: 900px;
+    /* width: 300px; */
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-ul{
-    width: 400px;
+#menu{
+    /* width: 250px; */
     display: flex;
     justify-content: space-between;
+    padding-inline-start: 0;
 }
 .categorias{
-    padding: 15px;
-    width: 150px;
-    margin: 0 10px;
+    padding: 5px;
+    width: 25%;
     list-style-type: none;
     background-color: cadetblue;
     color: white;
@@ -35,15 +41,17 @@ ul{
     text-align: center;  
 }
 
-.categorias:hover{
+/* .categorias:hover{
     background-color: rgb(197, 75, 102);
-}
+} */
 
 #grid{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
+    justify-content: center;
+    /* width: 250px; */
+    padding: 20px;
+    margin: auto;
     padding: 0;
 
 }
@@ -53,7 +61,7 @@ ul{
     width: 250px;
     background-color: white;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px 5px;
     border-radius: 10px;
 }
 
@@ -90,4 +98,31 @@ main>div{
 .itens>button:hover{
     background-color: rgb(197, 75, 102);
     font-size: 18px;
+}
+
+@media screen and (min-width: 550px) {
+    #grid{
+        justify-content: space-around;
+    }
+
+    .itens{
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    
+
+    .itens{
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    
+    #menu{
+        width: 400px;
+    }
+
+   
 }
